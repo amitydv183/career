@@ -1,0 +1,73 @@
+/* General Header Styles */
+.header {
+    background-color: #34495e; /* Dark blue-gray background */
+    color: white; /* White text for contrast */
+    padding: 20px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+    position: sticky; /* Sticks to top on scroll */
+    top: 0;
+    z-index: 1000; /* Ensures header is always on top */
+  }
+  
+  /* Navigation Styling */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Adds space on the sides */
+  }
+  
+  /* Logo/Title Styling */
+  nav h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0;
+    color: #ecf0f1; /* Light gray for a softer contrast */
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px; /* Adds spacing between links */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none; /* Removes underline from links */
+    color: #ecf0f1; /* Light gray for link text */
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  /* Hover Effect for Links */
+  .nav-links a:hover {
+    color: #1abc9c; /* Aqua green hover effect */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column; /* Stack items vertically for smaller screens */
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px; /* Reduce spacing between links */
+      margin-top: 10px;
+    }
+  
+    .nav-links a {
+      font-size: 1em; /* Adjust font size for smaller devices */
+    }
+  }
+  
